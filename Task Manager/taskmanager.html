@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>My Student Task Manager</title>
+
+    <link rel="stylesheet" href="task.css">
+    <script src="task.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>Student Task Manager</h1>
+        <p>Keep your assignments organized!</p>
+    </header>
+
+    <main class="container">
+
+        <section class="card">
+
+            <h2>Add a New Task</h2>
+
+            <label for="taskInput">
+                Task Description
+            </label>
+
+            <input
+                type="text"
+                id="taskInput"
+                placeholder="Enter a task..."
+                maxlength="100"
+            >
+
+            <label for="priorityInput">
+                Priority Level
+            </label>
+
+            <select id="priorityInput">
+
+                <option value="low">
+                    Low Priority
+                </option>
+
+                <option value="medium">
+                    Medium Priority
+                </option>
+
+                <option value="high">
+                    High Priority
+                </option>
+
+            </select>
+
+            <button id="addButton" type="button">
+                Add Task
+            </button>
+
+            <p id="message"></p>
+
+        </section>
+
+        <section class="card">
+
+            <h2>My Tasks</h2>
+
+            <p>
+                Tasks will appear below when you add them.
+            </p>
+
+            <ul id="taskList"></ul>
+
+        </section>
+
+        <section class="card">
+
+            <h2>How to Use</h2>
+
+            <p>
+                Enter an assignment or task, choose its
+                priority, and click Add Task.
+            </p>
+
+            <p>
+                Mark tasks as completed when you finish
+                them, or delete tasks you no longer need.
+            </p>
+
+        </section>
+
+    </main>
+
+    <footer>
+        <p>CIS-099 JavaScript Project</p>
+    </footer>
+
+</body>
+</html>

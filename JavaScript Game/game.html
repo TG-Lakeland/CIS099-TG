@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Choose Your Own Adventure</title>
+
+    <link rel="stylesheet" href="game.css">
+    <script src="game.js" defer></script>
+</head>
+<body>
+
+    <main class="game-container">
+
+        <h1>Choose Your Own Adventure</h1>
+
+        <p>
+            You have been selected for a dangerous mission.
+            Your choices will determine your fate.
+        </p>
+
+        <div class="game-section">
+
+            <label for="playerName">
+                What is your name?
+            </label>
+
+            <input
+                type="text"
+                id="playerName"
+                placeholder="Enter your name"
+            >
+
+            <label for="location">
+                Choose your destination:
+            </label>
+
+            <select id="location">
+                <option value="forest">Haunted Forest</option>
+                <option value="cave">Crystal Cave</option>
+                <option value="city">Abandoned City</option>
+            </select>
+
+            <label for="supplies">
+                How many supplies will you bring? (0-10)
+            </label>
+
+            <input
+                type="number"
+                id="supplies"
+                min="0"
+                max="10"
+                placeholder="Enter a number"
+            >
+
+            <button id="startButton" type="button">
+                Begin Adventure
+            </button>
+
+        </div>
+
+        <div class="results">
+
+            <h2>Your Adventure</h2>
+
+            <p id="story">
+                Your story will appear here...
+            </p>
+            <p id="outcome"></p>
+            
+            <button type="option1" id="1"></button>
+            <button type="option2" id="2"></button>
+        </div>
+
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>D&D Registration</title>
+</head>
+<body>
+  <header>
+    <h1>D&D Campaign Registration</h1>
+    <p>Sign up for an upcoming campaigns.</p>
+  </header>
+    <img src="Images/Tavern.jpg" alt="Tavern" height="200" width="250"> 
+  <main>
+    <section>
+      <h2>Campaign Schedule</h2>
+
+      <table>
+        <caption>Upcoming Events</caption>
+        <img src="Images/Knight.jpg" alt="Medieval Campaign" height="200" width="150">
+        <tr>
+          <th>Medieval Campaign</th>
+          <th>Nov 8th</th>
+          <th>Ricky's House</th>
+        </tr>
+        <img src="Images/Steam Punk.jpg" alt="Steam Punk Campaign" height="200" width="200">
+        <tr>
+          <td>Steam Punk Campaign</td>
+          <td>Nov 12th</td>
+          <td>John's House</td>
+        </tr>
+        <img src="Images/Space.jpg" alt="Space Campaign" height="200" width="200">
+        <tr>
+          <td>Space Campaign</td>
+          <td>Nov 28th</td>
+          <td>Tom's House</td>
+        </tr>
+      </table>
+    </section>
+
+    <section>
+      <h2>Register Here</h2>
+
+      <img src="Images/Sign up.jpg" alt="Sign up" height="200" width="200">
+
+      <form>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="event">Choose a Campaign:</label>
+        <select id="event" name="event">
+          <option value="web-workshop">Medieval</option>
+          <option value="game-night">Steam Punk</option>
+          <option value="tech-talk">Space</option>
+        </select>
+
+        <p>Preferred Contact Method:</p>
+
+        <input type="radio" id="contact-email" name="contact-method" value="email">
+        <label for="contact-email">Email</label>
+
+        <input type="radio" id="contact-phone" name="contact-method" value="phone">
+        <label for="contact-phone">Phone</label>
+
+        <br>
+
+        <input type="checkbox" id="updates" name="updates">
+        <label for="updates">Send me event updates</label>
+
+        <br>
+
+        <label for="comments">Comments or Questions:</label>
+        <textarea id="comments" name="comments"></textarea>
+
+        <button type="submit">Submit Registration</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>Created by Tristan Griffin</p>
+  </footer>
+</body>
+</html>
